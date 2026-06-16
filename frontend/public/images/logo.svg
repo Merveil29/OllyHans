@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="oh-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D9A441"/>
+      <stop offset="100%" style="stop-color:#c9942a"/>
+    </linearGradient>
+  </defs>
+  <text x="100" y="32" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#oh-gold)" text-anchor="middle" letter-spacing="1">OLLY HANS</text>
+  <text x="100" y="50" font-family="Poppins, Arial, sans-serif" font-size="10" font-weight="400" fill="#666" text-anchor="middle" letter-spacing="3">DISTRIBUTION</text>
+</svg>

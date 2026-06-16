@@ -1,0 +1,73 @@
+services:
+  - type: web
+    name: top-ideal-space
+    runtime: docker
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        value: https://top-ideal-space.onrender.com
+      - key: VITE_API_BASE_URL
+        value: /api/v1
+      - key: FRONTEND_URL
+        value: https://top-ideal-space.onrender.com
+      - key: DB_CONNECTION
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_DATABASE
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_PORT
+        value: "3306"
+      - key: SESSION_DRIVER
+        value: database
+      - key: CACHE_STORE
+        value: database
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: MAIL_MAILER
+        value: smtp
+      - key: MAIL_HOST
+        sync: false
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
+      - key: MAIL_FROM_ADDRESS
+        sync: false
+      - key: MAIL_PORT
+        value: "587"
+      - key: MAIL_FROM_NAME
+        value: TopIdealSpace
+      - key: CLOUDINARY_URL
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: FEDAPAY_PUBLIC_KEY
+        sync: false
+      - key: FEDAPAY_SECRET_KEY
+        sync: false
+      - key: FEDAPAY_MODE
+        value: live
+      - key: FEDAPAY_CURRENCY
+        value: XOF
+      - key: GROQ_API_KEY
+        sync: false
+      - key: L5_SWAGGER_GENERATE_ALWAYS
+        value: "false"
+      - key: L5_SWAGGER_CONST_HOST
+        value: https://top-ideal-space.onrender.com/api/v1
